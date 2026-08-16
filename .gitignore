@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+save.json
+.reasonix/
+reasonix.toml
+config.xlsx
