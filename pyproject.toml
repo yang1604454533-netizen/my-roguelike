@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-roguelike"
+version = "1.0.0"
+description = "一款 Python + Pygame 制作的肉鸽生存射击游戏"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["game", "roguelike", "pygame", "python"]
+authors = [
+    { name = "YJC" }
+]
+dependencies = [
+    "pygame>=2.5.0",
+    "openpyxl>=3.1.0",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+roguelike = "main:main"
+
+[tool.setuptools]
+packages = []
+
+[tool.setuptools.package-data]
+"" = ["assets/*.png", "*.ttf"]
